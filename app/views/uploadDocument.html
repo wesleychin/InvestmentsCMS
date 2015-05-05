@@ -1,25 +1,31 @@
 <div class="well well-lg">
-	<span>Select a section to upload the document to:</span>
-	<select class="form-control">
-		<option value="1">Share Information</option>
-		<option value="2">Financial Results</option>
-		<option value="3">Announcements</option>
-		<option value="4">Financial Calendar</option>
-		<option value="5">Annual Reports</option>
-		<option value="6">Presentations</option>
-		<option value="7">Press Releases</option>
-		<option value="8">Webcasts</option>
-		<option value="9">Operational Data</option>
-		<option value="10">Corporate Governance</option>
-		<option value="11">Shareholder Structure</option>
-		<option value="12">Investor Contacts</option>
-	</select>
-	 watching model:
-    <div class="button" ngf-select ng-model="files">Upload using model $watch</div>
-    <div class="button" ngf-select ngf-change="upload($files)">Upload on file change</div>
-    Drop File:
-    <div ngf-drop ng-model="files" class="drop-box" 
-        ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true"
-        ngf-accept="'.jpg,.png,.pdf'">Drop Images or PDFs files here</div>
-    <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+	<div class="text-center">
+		<h2>Upload a document</h2>
+		<br/>
+		<span>Select a section to upload the document to:</span>
+		<br/><br/>
+		<select class="form-control">
+			<option value="1">Share Information</option>
+			<option value="2">Financial Results</option>
+			<option value="3">Announcements</option>
+			<option value="4">Financial Calendar</option>
+			<option value="5">Annual Reports</option>
+			<option value="6">Presentations</option>
+			<option value="7">Press Releases</option>
+			<option value="8">Webcasts</option>
+			<option value="9">Operational Data</option>
+			<option value="10">Corporate Governance</option>
+			<option value="11">Shareholder Structure</option>
+			<option value="12">Investor Contacts</option>
+		</select>
+		<br/>
+		<div class="btn btn-primary" ngf-select ng-model="files">Upload using model $watch</div>
+		<br/><br/>
+		<div class="btn btn-primary" ngf-select ngf-change="upload($files)">Upload on file change</div>
+		<br/><br/>
+		<div ngf-drop ng-model="files" class="drop-box" 
+		ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true"
+		ngf-accept="'.jpg,.png,.pdf'">Drop Images or PDFs files here</div>
+		<div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+	</div>
 </div>
