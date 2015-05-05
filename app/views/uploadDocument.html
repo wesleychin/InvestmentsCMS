@@ -1,0 +1,22 @@
+<div class="well well-lg">
+	<span>Select a section to upload the document to:</span>
+	<select class="form-control">
+		<option value="one">One</option>
+		<option value="two">Two</option>
+		<option value="three">Three</option>
+		<option value="four">Four</option>
+		<option value="five">Five</option>
+	</select>
+	 watching model:
+    <div class="button" ngf-select ng-model="files">Upload using model $watch</div>
+    <div class="button" ngf-select ngf-change="upload($files)">Upload on file change</div>
+    Drop File:
+    <div ngf-drop ng-model="files" class="drop-box" 
+        ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true"
+        ngf-accept="'.jpg,.png,.pdf'">Drop Images or PDFs files here</div>
+    <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+
+    Image thumbnail: <img ngf-src="files[0]">
+    Audio preview: <audio controls ngf-src="files[0]"></audio>
+    Video preview: <video controls ngf-src="files[0]"></video>
+</div>
