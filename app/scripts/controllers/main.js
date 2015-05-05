@@ -7,11 +7,11 @@
  * # MainCtrl
  * Controller of the investmentsCmsApp
  */
-angular.module('investmentsCmsApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+ angular.module('investmentsCmsApp')
+ .controller('MainCtrl', function ($scope) {
+ 	$scope.documents = [
+ 	{"user":"John", "section":"Shares", "name":"Document 1"},
+ 	{"user":"Anna", "section":"Calendar", "name":"Document 2"},
+ 	{"user":"Peter", "section":"Other", "name":"Document 3"}
+ 	];
+ });

@@ -18,7 +18,7 @@
             for (var i = 0; i < files.length; i++) {
                 var file = files[i];
                 Upload.upload({
-                    url: 'upload/url',
+                    url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
                     fields: {'username': $scope.username},
                     file: file
                 }).progress(function (evt) {
